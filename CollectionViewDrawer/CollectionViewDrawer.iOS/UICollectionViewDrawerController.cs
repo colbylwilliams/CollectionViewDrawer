@@ -13,7 +13,7 @@ namespace CollectionViewDrawer.iOS
 	public partial class UICollectionViewDrawerController : UICollectionViewController
 	{
 
-		public List<string> items = new List<string> { "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve" };
+		public List<string> items = new List<string> { "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen" };
 
 
 		public UICollectionViewDrawerController (IntPtr handle) : base (handle) { }
