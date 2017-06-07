@@ -1,4 +1,4 @@
-﻿// WARNING
+// WARNING
 //
 // This file has been generated automatically by Visual Studio to store outlets and
 // actions made in the UI designer. If it is removed, they will be lost.
@@ -13,6 +13,9 @@ namespace CollectionViewDrawer.iOS
 	partial class UICollectionViewDrawerController
 	{
 		[Outlet]
+		UIKit.UIView drawerContainerView { get; set; }
+
+		[Outlet]
 		CollectionViewDrawer.iOS.UICollectionViewDrawerFlowLayout DrawerFlowLayout { get; set; }
 		
 		void ReleaseDesignerOutlets ()
@@ -20,6 +23,11 @@ namespace CollectionViewDrawer.iOS
 			if (DrawerFlowLayout != null) {
 				DrawerFlowLayout.Dispose ();
 				DrawerFlowLayout = null;
+			}
+
+			if (drawerContainerView != null) {
+				drawerContainerView.Dispose ();
+				drawerContainerView = null;
 			}
 		}
 	}

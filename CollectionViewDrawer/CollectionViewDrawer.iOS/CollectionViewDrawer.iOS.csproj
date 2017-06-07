@@ -134,6 +134,18 @@
     <Compile Include="UICollectionViewDrawerCell.designer.cs">
       <DependentUpon>UICollectionViewDrawerCell.cs</DependentUpon>
     </Compile>
+    <Compile Include="DrawerContentCollectionView.cs" />
+    <Compile Include="DrawerContentCollectionView.designer.cs">
+      <DependentUpon>DrawerContentCollectionView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrawerContentCollectionViewCell.cs" />
+    <Compile Include="DrawerContentCollectionViewCell.designer.cs">
+      <DependentUpon>DrawerContentCollectionViewCell.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrawerContentCollectionViewHeader.cs" />
+    <Compile Include="DrawerContentCollectionViewHeader.designer.cs">
+      <DependentUpon>DrawerContentCollectionViewHeader.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Entitlements.plist" />

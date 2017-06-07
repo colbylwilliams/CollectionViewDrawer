@@ -9,26 +9,12 @@ using System.CodeDom.Compiler;
 
 namespace CollectionViewDrawer.iOS
 {
-	[Register ("UICollectionViewDrawerCell")]
-	partial class UICollectionViewDrawerCell
+	[Register ("DrawerContentCollectionViewCell")]
+	partial class DrawerContentCollectionViewCell
 	{
-		[Outlet]
-		UIKit.UIView circleView { get; set; }
-
-		[Outlet]
-		UIKit.UILabel label { get; set; }
 		
 		void ReleaseDesignerOutlets ()
 		{
-			if (label != null) {
-				label.Dispose ();
-				label = null;
-			}
-
-			if (circleView != null) {
-				circleView.Dispose ();
-				circleView = null;
-			}
 		}
 	}
 }
