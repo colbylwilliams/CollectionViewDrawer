@@ -6,7 +6,7 @@
     <ProjectGuid>{EAD6C52A-0C2A-43A7-AD5C-BA05DF8E3283}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Exe</OutputType>
-    <RootNamespace>XWeather.Shared.iOS</RootNamespace>
+    <RootNamespace>CollectionViewDrawer.iOS</RootNamespace>
     <AssemblyName>CollectionViewDrawer.iOS</AssemblyName>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
   </PropertyGroup>
@@ -125,6 +125,15 @@
     <Compile Include="Extensions\StoryboardExtensions.cs" />
     <Compile Include="Extensions\ViewExtensions.cs" />
     <Compile Include="Settings\SettingUtilities.cs" />
+    <Compile Include="UICollectionViewDrawerController.cs" />
+    <Compile Include="UICollectionViewDrawerController.designer.cs">
+      <DependentUpon>UICollectionViewDrawerController.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UICollectionViewDrawerFlowLayout.cs" />
+    <Compile Include="UICollectionViewDrawerCell.cs" />
+    <Compile Include="UICollectionViewDrawerCell.designer.cs">
+      <DependentUpon>UICollectionViewDrawerCell.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Entitlements.plist" />
