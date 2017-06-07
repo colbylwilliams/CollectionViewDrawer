@@ -9,8 +9,10 @@ namespace CollectionViewDrawer.iOS
 {
 	public partial class UICollectionViewDrawerCell : UICollectionViewCell
 	{
-		public UICollectionViewDrawerCell (IntPtr handle) : base (handle)
-		{
-		}
+
+		public UICollectionViewDrawerCell (IntPtr handle) : base (handle) { }
+
+
+		public void SetData (string text) => label.Text = text;
 	}
 }

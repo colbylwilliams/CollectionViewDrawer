@@ -12,22 +12,26 @@ namespace CollectionViewDrawer.iOS
 {
 	public partial class UICollectionViewDrawerController : UICollectionViewController
 	{
+
 		public List<string> items = new List<string> { "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve" };
 
-		public UICollectionViewDrawerController (IntPtr handle) : base (handle)
-		{
-		}
+
+		public UICollectionViewDrawerController (IntPtr handle) : base (handle) { }
+
 
 		public override nint NumberOfSections (UICollectionView collectionView) => 1;
 
+
 		public override nint GetItemsCount (UICollectionView collectionView, nint section) => items.Count;
+
 
 		public override UICollectionViewCell GetCell (UICollectionView collectionView, NSIndexPath indexPath)
 		{
 			var cell = collectionView.Dequeue<UICollectionViewDrawerCell> (indexPath);
 
 			var item = items [(int)indexPath.Item];
-			// set data to cell
+
+			cell.SetData (item);
 
 			return cell;
 		}

@@ -12,9 +12,15 @@ namespace CollectionViewDrawer.iOS
 	[Register ("UICollectionViewDrawerCell")]
 	partial class UICollectionViewDrawerCell
 	{
-
+		[Outlet]
+		UIKit.UILabel label { get; set; }
+		
 		void ReleaseDesignerOutlets ()
 		{
+			if (label != null) {
+				label.Dispose ();
+				label = null;
+			}
 		}
 	}
 }
