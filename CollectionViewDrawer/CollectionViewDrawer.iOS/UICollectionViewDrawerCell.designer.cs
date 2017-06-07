@@ -7,12 +7,12 @@
 using Foundation;
 using System.CodeDom.Compiler;
 
-namespace XWeather.Shared.iOS
+namespace CollectionViewDrawer.iOS
 {
 	[Register ("UICollectionViewDrawerCell")]
 	partial class UICollectionViewDrawerCell
 	{
-		
+
 		void ReleaseDesignerOutlets ()
 		{
 		}
